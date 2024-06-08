@@ -2,5 +2,77 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
+
+body{
+  background: url(leaves_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#initial-seperator{
+    margin-top: 15px;
+    border: 2px solid rgba(165, 42, 42, 0.397);
+}
+
+
+h2{
+    color: black;
+}
+
+h3{
+    color: black;
+    
+}
+p{
+    
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#navbar i{
+    position: relative;
+    left: 9px;
+}
+
+.topnav{
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.topnav > div{
+   padding: 6px 12px;
+   margin: 8px;
+   width: 200px;
+   height: 50px;
+   background-color: lightseagreen;
+   border-radius: 5px;
+   text-align: center;
+}
+
+.topnav a{
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.titleholder{
+    margin: 20px 0px;
+    padding: 5px 12px;
+    width: 100vw;
+ }
+
+.titleholder .bold{
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+    font-size: 1.8rem;
+    color: black;
+}
+
 
