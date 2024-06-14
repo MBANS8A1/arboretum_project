@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background: url(leaves_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+.h-seperator{
+    margin: 1.5rem 0 0 0;
+    border: 2px solid rgba(165, 42, 42, 0.397);
+    width: 100%;
+}
+
+.carousel-img{
+    object-fit:contain;
+    height: 400px;
+    width: 400px;
+}
+
+.magcontainer{
+    
+    margin: 1.125rem 1.125rem 1.125rem 2.1rem;
+    width: 25vw;
+}
+
+.dinner_container{
+    width: 30vw;
+    margin: 1.125rem 1.125rem 1.125rem 2.1rem;
+}
+
+.discovery-container{
+    margin: 0 3px 8px 65px;
+    width: 25vw;
+    max-height: 460px;
+}
+
+#arbCarousel{
+    min-width: calc(100vw - 93.7rem);
+    width: 40%;
+    height:40%;
+    margin: 25px 4px 4px 45px;
+    padding: 5px;
+}
+
+ .carousel-inner{
+   border-radius: 4px;
+}
+
+.carousel-item > img{
+    object-fit: contain;
+}
+
+/* .carousel-indicators{
+    position: relative;
+    z-index: 1;
+    margin: 0.4rem;
+} */
+
+#carouselsection{
+    border: 2px solid green;
+} */
+
+figure{
+    margin-bottom:8px;
+}
+
+figure figcaption{
+    margin: 0.3rem 0.3rem 1rem 1rem;
+   
+}
+
+
+.captiontext{
+    color: rgb(255,250,250)
+}
+
+#magnolia-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+#dining-hall{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.discovery-img{
+    width: 100%;
+    height: 65%;
+    object-fit: contain;
+    
+}
+
+#paymentlink{
+    display: block;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-left: 2.1rem;
+    margin-top: 0.6rem;
+    padding: 0;
+    text-decoration: none;
+    max-width: 300px;
+    max-height: 70px;
+    margin-bottom: 2.5rem;
+}
+
+#ticket-button{
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+}
+
+h2{
+    color: black;
+    margin: 13px 24.5px;
+}
+
+h2 ~ p{
+    padding: 8px;
+    margin: 25px;
+}
+
+.section_h3{
+    color: black;
+    margin-left: 30px;
+}
+
+.section_h3 ~ p{
+    padding: 8px;
+    margin:9px 10px 10px 35px;
+}
+
+.customcaption{
+    padding-left: -15px !important;
+    margin: 2px !important;
+}
+
+h4{
+    color:black;
+    margin-left: 42px;
+}
+
+h4 ~ p{
+
+    padding: 8px;
+    margin:2px 10px 10px 55px;
+}
+
+
+aside{
+    margin: 0.5rem 0 1.5rem 3rem;
+}
+
+
+p{
+    
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 8px;
+}
+
+#navbar i{
+    position: relative;
+    left: 9px;
+}
+
+.topnav{
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.topnav > div{
+   padding: 6px 12px;
+   margin: 8px;
+   width: 200px;
+   height: 50px;
+   background-color: lightseagreen;
+   border-radius: 5px;
+   text-align: center;
+}
+
+.topnav a{
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.titleholder{
+    margin: 20px 0px;
+    padding: 5px 12px;
+    width: 100vw;
+ }
+
+.titleholder .bold{
+    text-align: center;
+    font-weight: 700;
+    margin: 0;
+    font-size: 1.8rem;
+    color: black;
+}
+
+#donate-a-tree{
+   
+    border: 2px solid purple;
+}
+
+#donate-heading{
+    
+    text-align: center;
+    margin: 5px 0 15px 0;
+}
+
+.borough-container{
+  padding:2px 0px 2px 2px;
+  border-radius: 4px;
+  background-color: #eed9c4;
+  height: 25vh;
+  width: auto;
+  border: 2px solid blue;
+  margin: 20px 20px 20px 35px;
+  
+}
+
+.borough-container::after{
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+
+#borough-logo{
+    float: right; 
+    width: 12.625rem;
+    height:100%;
+    position: relative;
+    bottom: 3.4rem;
+
+}
+
+#seedling-link{
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    top: 45px;
+}
+
+#seedling-button{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    border: 2px solid #04AA6D;
+    border-radius: 3px;
+    font-size: 16px;
+    text-align: center;
+    background-color: beige;
+    display: inline-block;
+   
+}  
+
+.social-list{
+    list-style: none;
+    margin-left: -1.5rem;
+}
+
+.social-link{
+    text-decoration: none;
+}
+
+li.social-icon{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+#upper-container{
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #ffc0cb;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 0px 0px 20px 30px;
+  background-color: #04AF70
+}
+
+footer{
+    background-color: #04AF70;
+}
+
+#lower-container{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid cyan;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    margin-left: 30px;
+    background-color: #04AF70;
+}
+  
+#lower-container > .bottom-item{
+    padding: 40px 15px 15px 15px;
+    border-radius: 3px;
+    background-color:#d1ffbd;
+    border: 2px solid;
+    text-align: center;
+    margin: 5px;
+    flex-grow: 1.5;
+    flex-shrink: 0;
+    flex-basis: calc(20% - 10px);
+}
+
+#lower-container > .last-item{
+    padding: 40px 15px 15px 15px;
+    border-radius: 3px;
+    background-color:#d1ffbd;
+    border: 2px solid;
+    text-align: center;
+    margin: 5px;
+    flex-grow: 0.5;
+    flex-shrink: 2;
+    flex-basis: calc(10%-2px);
+}
+  
+#lower-container > .bottom-item:after{
+    content: '';
+    display: block;
+    padding-bottom: 5%;
+}
+
+.photo-list{
+    list-style: none;
+    display: inline;
+}
+
+.photo-list li{
+    list-style: none;
+    display: inline-block;
+    width: 15%;
+    height: 15%;
+    margin: 35px;
+}
+
+
+
+.logo-container img{
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+#upper-container > .normal-item{
+    padding: 40px 15px 15px 15px;
+    border-radius: 3px;
+    background-color:#d1ffbd;
+    border: 2px solid;
+    text-align: center;
+    margin: 5px;
+    /* width: 450px;
+    height: 200px; */
+    flex:1 0 calc(25% - 10px);
+}
+
+#upper-container > #third-item{
+    padding: 40px 15px 15px 15px;
+    border-radius: 3px;
+    background-color:#d1ffbd;
+    border: 2px solid;
+    text-align: center;
+    margin: 5px;
+    /* width: 450px;
+    height: 200px; */
+    flex-shrink: 2;
+    flex-grow: 0.5;
+    flex-basis: calc(10%-2px);
+}
+
+#number-align{
+    margin-left: 2.1rem;
+}
+
+.policy-link{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#upper-container > .upper-item:after{
+    content: '';
+    display: block;
+    padding-bottom: 5%;
+  }
+
+
+.last-item{
+    text-align: center;
+}
+
+
+
+
+
+/* .borough-logo{
+    width: 10.625rem;
+    height:10.625rem;
+}
+
+#donate-heading{
+    margin: auto;
+    text-align: center;
+    margin: 3px;
+}
+
+
+#donate-seedling{
+    color: black;
+    padding: 16px 32px;
+    text-align:center;
+    font-size: 16px;
+    margin: 4px 2px;
+    border: 2px solid #04AA6D;
+    border-radius: 2px;
+}
+
+#seedling-link{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#sendoff-tree{
+    border: 2px solid red;
+    margin-top: 40px;
+} */ 
