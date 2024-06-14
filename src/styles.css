@@ -171,7 +171,29 @@ p{
     margin: 8px;
 }
 
-#navbar i{
+.navgroup{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -20px;
+    column-gap: 4.37rem;
+}
+
+
+
+
+.navbutton{
+    display: inline-block;
+    width: 13vw;
+    height: 3.4rem;
+    background-color: lightseagreen;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/* #navbar i{
     position: relative;
     left: 9px;
 }
@@ -198,7 +220,7 @@ p{
     text-decoration: none;
     font-size: 17px;
     cursor: pointer;
-}
+} */
 
 .titleholder{
     margin: 20px 0px;
