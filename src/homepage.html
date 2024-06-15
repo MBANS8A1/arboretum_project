@@ -28,13 +28,69 @@
             <div><a>Souvenirs</a><i class="fa fa-tree"></i></div>
             <div><a>Find Us</a><i class="fa fa-tree"></i></div>       -->
             <ul class="navgroup">
-              <li><a class="navlink"><button class="navbutton" type="button">Opening Hours <i class="fa-solid fa-clock"></i></button></a></li>
+              <li><button class="navbutton" type="button" data-bs-toggle="modal" data-bs-target="#openhourmodal">Opening Hours <i class="fa-solid fa-clock"></i></button>
+              <!-- Modal is here-->
+              <div class="modal" id="openhourmodal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal header-->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Opening Hours</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th colspan="2">Standard Opening Hours</th>
+                          </tr>    
+                        </thead>
+                        <tbody>
+                          <tr><td>Monday:</td><td>9:00am - 4:30pm</td></tr>
+                          <tr><td>Tuesday:</td><td>9:00am - 4:30pm</td></tr>
+                          <tr><td>Wednesday:</td><td>9:00am - 4:30pm</td></tr>
+                          <tr><td>Thursday:</td><td>10:00am - 6:00pm</td></tr>
+                          <tr><td>Friday:</td><td>9:00am - 5:00pm</td></tr>
+                          <tr><td>Saturday:</td><td>9:00pm - 2:00pm</td></tr>
+                          <tr><td>Sunday:</td><td>Closed</td></tr>
+                        </tbody>
+                      </table>
+
+                      <table>
+                        <thead>
+                          <tr>
+                            <th colspan="2">Opening Hours &#40UK public holidays 2024&#41</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr><td>New Years Day (1 Jan)</td><td>Closed</td></tr>
+                          <tr><td>Good Friday (Mar 29)</td><td>10:00am-1:30pm</td></tr>
+                          <tr><td>Easter Monday (Apr 1)</td><td>Closed</td></tr>
+                          <tr><td>Early May Bank Holiday (May 6)</td><td>closed</td></tr>
+                          <tr><td>Spring Bank Holiday (May 27)</td><td>12:00pm-5:00pm</td></tr>
+                          <tr><td>Summer Bank Holiday (Aug 26)</td><td>Closed</td></tr>
+                          <tr><td>Christmas Day (Dec 25)</td><td>Closed</td></tr>
+                          <tr><td>Boxing Day (Dec 26)</td><td>Closed</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- Modal footer-->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </li>
               <li><a class="navlink"><button class="navbutton" type="button">Tree Varieties <i class="fa fa-tree"></i></button></a></li>
               <li><a class="navlink"><button class="navbutton" type="button">Parking Times <i class="fa-solid fa-square-parking"></i></button></a></li>
               <li><a class="navlink"><button class="navbutton" type="button">Buy Tickets <i class="fa-solid fa-ticket"></i></button></a></li>
               <li><a class="navlink"><button class="navbutton" type="button">Buy Souvenirs <i class="fa-solid fa-gift"></i></button></a></li>
               <li><a class="navlink"><button class="navbutton" type="button">Find Us <i class="fa-solid fa-map-location"></i></button></a></li>
             </ul>
+              
           </nav>
           <hr class="h-seperator">
        </header>
