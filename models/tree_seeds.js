@@ -1,6 +1,97 @@
-const {DataTypes, Model} = require("sequelize");
+const {DataTypes, Model,Sequelize} = require("sequelize");
 
 const sequelize = require("../config/sequelize.js")
+
+// const suppliersData = [
+//   {
+//     supplier_name: "Kent & Stowe" //1
+//   },
+//   {
+//     supplier_name: "Spear & Jackson" //2
+//   },
+//   {
+//     supplier_name: "Wilkinson Sword" //3
+//   },
+//   {
+//     supplier_name: "Darlac Ltd" //4
+//   },
+//   {
+//     supplier_name: "Walensee" //5
+//   },
+//   {
+//     supplier_name: "Evergreen Garden Care Ltd" //6
+//   },
+//   {
+//     supplier_name: "Neilsen" //7
+//   },
+//   {
+//     supplier_name: "Flymo" //8
+//   },
+//   {
+//     supplier_name: "Burgon & Ball" //9
+//   },
+//   {
+//     supplier_name: "Colwelt" //10
+//   },
+//   {
+//     supplier_name: "Alina" //11
+//   },
+//   {
+//     supplier_name: "GreFusion" //12
+//   },
+//   {
+//     supplier_name: "GardenGloss" //13
+//   },
+//   {
+//     supplier_name: "Nutscene" //14
+//   },
+//   {
+//     supplier_name: "Gracey Seed-Co Ltd" //15
+//   },
+//   {
+//     supplier_name: "Fothergill Seeds Ltd" //16
+//   },
+//   {
+//     supplier_name: "Chiltern Seeds" //17
+//   },
+//   {
+//     supplier_name: "D.T. Brown Seeds" //18
+//   },
+//   {
+//     supplier_name: "Kings Seeds" //19
+//   },
+//   {
+//     supplier_name: "Moles Seeds Ltd" //20
+//   },
+//   {
+//     supplier_name: "Miracle Gro" //21
+//   },
+//   {
+//     supplier_name: "Jamieson Brothers" //22
+//   },
+//   {
+//     supplier_name: "Tree Appeal" //23
+//   },
+//   {
+//     supplier_name: "Noel Tatt" //24
+//   },
+//   {
+//     supplier_name: "DV Design" //25
+//   },
+//   {
+//     supplier_name: "Woodmansterne" //26
+//   },
+//   {
+//     supplier_name: "Abacus Cards" //27
+//   },
+//   {
+//     supplier_name: "Nokular Limited" //28
+//   },
+//   {
+//     supplier_name: "Purple Fox" //29
+//   },
+
+// ]
 
 const treeSeedData = [
     {
@@ -18,7 +109,7 @@ const treeSeedData = [
       tree_image1:`${__dirname}/tree_photos/hazel1.png`,
       tree_image2:`${__dirname}/tree_photos/hazel2.jng`,
       tree_image3:`${__dirname}/tree_photos/hazel3.jng`,
-      seedcompany_id:15
+      seedcompany_name:"Gracey Seed-Co Ltd" 
       //image(s) collected
     },
     {
@@ -36,7 +127,7 @@ const treeSeedData = [
       tree_image1:`${__dirname}/tree_photos/alnus_glutinosa1.jpg`,
       tree_image2:`${__dirname}/tree_photos/alnus_glutinosa2.jpg`,
       tree_image3: null,
-      seedcompany_id:15
+      seedcompany_name:"Gracey Seed-Co Ltd" 
        //image(s) collected
     },
     {
@@ -54,7 +145,7 @@ const treeSeedData = [
       tree_image1:`${__dirname}/tree_photos/betula_pendula1.jpg`,
       tree_image2:`${__dirname}/tree_photos/betula_pendula2.jpg`,
       tree_image3:`${__dirname}/tree_photos/betula_pendula3.jpg`,
-      seedcompany_id:16
+      seedcompany_name:"Fothergill Seeds Ltd"
       //image(s) collected
     },
     {
@@ -72,7 +163,7 @@ const treeSeedData = [
       tree_image1:`${__dirname}/tree_photos/cornus_mas1.jpg`,
       tree_image2:`${__dirname}/tree_photos/cornus_mas2.jpg`,
       tree_image3:`${__dirname}/tree_photos/cornus_mas3.jpg`,
-      seedcompany_id:17
+      seedcompany_name:"Chiltern Seeds"
       //image(s) collected
     },
     {
@@ -90,7 +181,7 @@ const treeSeedData = [
       tree_image1:`${__dirname}/tree_photos/acer_saccharum1.jpg`,
       tree_image2:`${__dirname}/tree_photos/acer_saccharum2.jpg`,
       tree_image3: null,
-      seedcompany_id:18
+      seedcompany_name:"D.T. Brown Seeds"
       //image(s) collected
     },
     {
@@ -108,7 +199,7 @@ const treeSeedData = [
       tree_image1: `${__dirname}/tree_photos/morus_nigra1.jpg`,
       tree_image2: `${__dirname}/tree_photos/morus_nigra2.jpg`,
       tree_image3: `${__dirname}/tree_photos/morus_nigra3.jpg`,
-      seedcompany_id:18
+      seedcompany_name:"D.T. Brown Seeds"
       //image(s) collected
     },
     {
@@ -126,7 +217,7 @@ const treeSeedData = [
       tree_image1:`${__dirname}/tree_photos/boabab1.jpg`,
       tree_image2:`${__dirname}/tree_photos/boabab2.jpg`,
       tree_image3:null,
-      seedcompany_id:17
+      seedcompany_name:"Chiltern Seeds" 
       //image(s) collected
     },
     {
@@ -144,7 +235,7 @@ const treeSeedData = [
       tree_image1:`${__dirname}/tree_photos/carpinus_betulus1.jpg`,
       tree_image2:`${__dirname}/tree_photos/carpinus_betulus_catkins2.jpg`,
       tree_image3:null,
-      seedcompany_id:17
+      seedcompany_name:"Chiltern Seeds" 
       //image(s) collected
     },
     {
@@ -162,7 +253,7 @@ const treeSeedData = [
       tree_image1:`${__dirname}/tree_photos/eucalyptus_cinerea1.jpg`,
       tree_image2:`${__dirname}/tree_photos/eucalyptus_cinerea2.jpg`,
       tree_image3:null,
-      seedcompany_id:19
+      seedcompany_name:"Kings Seeds"
       //image(s) collected
     },
     {
@@ -180,13 +271,13 @@ const treeSeedData = [
       tree_image1:`${__dirname}/tree_photos/dawn_redwood1.jpg`,
       tree_image2:`${__dirname}/tree_photos/dawn_redwood2.jpg`,
       tree_image3:`${__dirname}/tree_photos/dawn_redwood3.jpg`,
-      seedcompany_id:18
+      seedcompany_name:"D.T. Brown Seeds" 
       //image(s) collected
     },
     {
       common_name:"Norway Maple",
       species_name:"Acer platanoides",
-      family:" Aceraceae",
+      family:"Aceraceae",
       seed_cost_incl_VAT:1.92,
       quantity_in_stock:10,
       seed_number_per_pack:20,
@@ -198,7 +289,7 @@ const treeSeedData = [
       tree_image1:`${__dirname}/tree_photos/acer_platanoides1.jpg`,
       tree_image2:`${__dirname}/tree_photos/acer_platanoides2.jpg`,
       tree_image3:`${__dirname}/tree_photos/acer_platanoides3.jpg`,
-      seedcompany_id:20
+      seedcompany_name:"Moles Seeds Ltd"
     },
     {
       common_name:"Cootamundra Wattle",
@@ -215,10 +306,12 @@ const treeSeedData = [
       tree_image1:`${__dirname}/tree_photos/acacia_baileyana1.jpg`,
       tree_image2:`${__dirname}/tree_photos/acacia_baileyana2.jpg`,
       tree_image3: null,
-      seedcompany_id:20
+      seedcompany_name:"Moles Seeds Ltd"
       //image(s) collected
     },
   ];
+
+
 
 class TreeSeed extends Model {
   
@@ -230,9 +323,7 @@ TreeSeed.init({
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
-        unique : true,
-        allowNull: false,
-        field: 'seed_id'
+        unique: true
     },
     common_name:{
         type: DataTypes.STRING(45),
@@ -290,121 +381,21 @@ TreeSeed.init({
     },
     tree_image3:{
         type: DataTypes.BLOB,       
-    },
+     },
     seedcompany_id:{
         type: DataTypes.INTEGER,
         references:{
            model: 'Supplier',
            key: 'supplier_id'
         }
-    }
+     }
     }
 
     ,{
-     sequelize,
-     timestamps: false,
-     freezeTableName: true
-
+    sequelize,
+    timestamps: false,
+    freezeTableName: true
 })
  
 
 module.exports = {TreeSeed,treeSeedData};
-
-// @Attribute(DataTypes.INTEGER)
-// @PrimaryKey
-// @AutoIncrement
-// id;
-
-// @Attribute(DataTypes.STRING)
-// @NotNull
-// firstName;
-
-// @Attribute(DataTypes.STRING)
-// lastName;
-// }
-
-// // const tree_seeds = {
-// //     seed_id:{
-// //       type: DataTypes.INTEGER,
-// //       autoincrement: true,
-// //       primaryKey: true,
-// //       allowNull: false,
-// //       validate: {
-// //         notNull: true
-// //       }
-      
-// //     },
-// //       common_name:{
-// //         type: DataTypes.STRING(45),
-// //         allowNull: false
-// //     },
-// //       species_name:{
-// //         type: DataTypes.STRING(45),
-// //         allowNull: false
-
-// //     },
-// //       family:{
-// //       type: DataTypes.STRING(40),
-// //       allowNull: false
-
-// //     },
-// //       seed_cost_incl_VAT:{
-// //       type: DataTypes.DOUBLE(4,2),
-// //       allowNull: false
-
-// //     },
-// //       quantity_in_stock:{
-// //       type: DataTypes.INTEGER,
-// //       allowNull: false
-
-// //     },
-// //       seed_number_per_pack:{
-// //       type: DataTypes.INTEGER,
-// //       allowNull: false
-
-// //     },
-// //       colour:{
-// //       type: DataTypes.STRING(20),
-// //       allowNull: false
-
-// //     },
-// //       hardiness:{
-// //       type: DataTypes.STRING(20),
-// //       allowNull: false
-
-// //     },
-// //       soil_type:{
-// //       type: DataTypes.STRING(60),
-// //       allowNull: false
-
-// //     },
-// //       soil_acidity:{
-// //       type: DataTypes.STRING(60),
-// //       allowNull: false
-
-// //     },
-// //     description:{
-// //       type: DataTypes.TEXT,
-// //       allowNull: false
-
-// //     },
-// //     tree_image1:{
-// //       type: DataTypes.BLOB,
-// //       allowNull: false
-// //     },
-// //     tree_image2:{
-// //       type: DataTypes.BLOB,
-// //       allowNull: true
-// //     },
-// //     tree_image3:{
-// //       type: DataTypes.BLOB,
-// //       allowNull: true
-// //     },
-// //       seedcompany_id:{
-// //       type: DataTypes.INTEGER,
-// //       references:{
-// //         model: 'suppliers',
-// //         key: 'supplier_id'
-// //       }
-// //     }
-// // }

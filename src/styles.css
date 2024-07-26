@@ -4,6 +4,34 @@
     box-sizing: border-box;
 }
 
+#header{
+    padding: 10px 10px 0 10px;;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: beige;
+    margin-bottom: 0;
+    z-index: 1
+}
+
+.title{
+    margin: 2px 0px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: black;
+}
+
+main{
+    margin-top: 120px;
+}
+/* .fixed-head{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}  */
+
 body{
   background: url(leaves_background.png);
   background-repeat: no-repeat;
@@ -12,9 +40,10 @@ body{
 }
 
 .h-seperator{
-    margin: 1.5rem 0 0 0;
+    margin: 2.5rem 0 0 0;
     border: 2px solid rgba(165, 42, 42, 0.397);
     width: 100%;
+    overflow: hidden;
 }
 
 .carousel-img{
@@ -120,9 +149,12 @@ figure figcaption{
     background-color: lightgreen;
 }
 
+article > h2{
+    margin-top: 20px;
+}
 h2{
     color: black;
-    margin: 13px 24.5px;
+    margin: 25px 24.5px 5px 24.5px;
 }
 
 h2 ~ p{
@@ -222,18 +254,11 @@ p{
 } */
 
 .titleholder{
-    margin: 20px 0px;
-    padding: 5px 12px;
+    
     width: 100vw;
  }
 
-.titleholder .bold{
-    text-align: center;
-    font-weight: 700;
-    margin: 0;
-    font-size: 1.8rem;
-    color: black;
-}
+
 
 #donate-a-tree{
    

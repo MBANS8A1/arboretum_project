@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.items-wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+
+.f-container{
+  display: grid;
+  border: 3px solid black;
+  margin: 2.8rem auto 1.8rem auto;
+  grid-template-areas:
+    "tool tool gift gift fertiliser fertiliser"
+    "tool tool gift gift fertiliser fertiliser"
+    "treeseed treeseed treeseed compost compost compost"
+    "treeseed treeseed treeseed compost compost compost";
+  gap: 0;
+  /* grid-template-columns: repeat(6,1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15em), 1fr));
+  grid-template-rows: auto 1fr;
+  inline-size: 80%;
+  text-align: center;
+
+}
+
+
+/* .grid > div{
+  border-radius: 4px;
+  padding: 6px;
+} */
+
+[class*="box-"] {
+  padding: 15px;
+}
+
+
+
+
+[class*="box-"] > .filter-checkbox {
+  padding: 15px;
+}
+
+.inline-dt{
+  display: inline;
+  
+}
+
+input[type="range"] {
+  vertical-align: bottom;
+}
+
+input[type="checkbox"] {
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+.inline-dt::before{
+  content: "\A";
+  white-space: pre;
+  display: block;
+}
+
+.box-1{
+  grid-area: tool;
+  border: 1px solid black;
+}
+
+
+.box-2{
+  grid-area: gift;
+  border: 1px solid black;
+
+}
+
+
+.box-3{
+  grid-area: fertiliser;
+  border: 1px solid black;
+
+}
+
+
+.box-4{
+  grid-area: treeseed;
+  border: 1px solid black;
+
+}
+
+
+.box-5{
+  grid-area: compost;
+  border: 1px solid black;
+}
+
+
+
+/* 
+.col-1 {
+    width: 8%;
+  }
+  .col-2 {
+    width: 17%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33%;
+  }
+  .col-5 {
+    width: 42%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58%;
+  }
+  .col-8 {
+    width: 57%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83%;
+  }
+  .col-11 {
+    width: 92%;
+  }
+  .col-12 {
+    width: 100%;
+  } */
+/* 
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+  } */
+
+header{
+    background-color: beige;
+    overflow: hidden;
+    margin-top: 2px;
+}
+.shop-header{
+    margin: 15px auto 15px 6px;;
+    padding: 5px 10px;
+    width: 30vw;
+    float: left;
+}
+
+.shop-header h1{
+   text-align: center;
+   font-weight: 700;
+   margin: 0;
+   font-size: 1.8rem;
+   color: black;
+   font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.header-grp{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    column-gap: 1.5rem;
+    margin: 15px 20px 0 auto;
+}
+
+.header-item{
+    display: inline-block;
+    /* width: 20vw;
+    height: 15vh; */
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#header-arrow{
+    margin: 0.5rem;
+}
+
+.header-item a{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 15px
+}

@@ -116,8 +116,8 @@ Supplier.init({
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
-        allowNull: false,
-        field: 'supplier_id'
+        unique: true
+       
     },
     supplier_name:{
         type: DataTypes.STRING(60),
@@ -126,7 +126,7 @@ Supplier.init({
 },{
     sequelize,
     timestamps: false,
-    freezeTableName: true,
+    freezeTableName: true
 
 })
 
