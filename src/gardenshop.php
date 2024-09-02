@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="./gardenshop.css">
       <link rel="icon" href="../tree_icon.png">
       <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- <script src="./slidelogic.js"></script> -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
       crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -77,7 +78,9 @@
               </dl>
             </div>
           </div>
-            <?php require_once 'shopconnect.php';?>
+            <?php require_once './shopconnect.php'; ?>
+            <script type="text/javascript" src="./slidelogic.js"></script>
+
        </main>
 
     </body>

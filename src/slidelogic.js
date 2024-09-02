@@ -52,4 +52,4 @@ function switchSlides(slideNum){
 }
 
 
-module.exports = {currentSlide,switchSlides};
+// module.exports = {currentSlide,switchSlides};
