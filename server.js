@@ -22,7 +22,7 @@ const TreeSeed = sequelize.define("treeseed",{
    hardiness:{type: DataTypes.STRING(20)},
    soilType:{type: DataTypes.STRING(60)},
    soilAcidity:{type: DataTypes.STRING(60)},
-   description:{type: DataTypes.TEXT},
+   description:{type: DataTypes.TEXT}, //11
    treeImage1:{type: DataTypes.BLOB},
    treeImage2:{type: DataTypes.BLOB},
    treeImage3:{type: DataTypes.BLOB}

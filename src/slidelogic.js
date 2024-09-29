@@ -17,10 +17,21 @@
 
 let slideIndex  = 1;
 
+showSlides(slideIndex);
 
-function displaySlides(number){
+//Next/previous controls
+function plusSlides(slideNum){
+  showSlides(slideIndex += slideNum);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(number){
   let i;
-  let slides = document.getElementsByClassName("slidebox");
+  let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
 
   if(number > slides.length){
@@ -42,14 +53,11 @@ function displaySlides(number){
 } 
 
 
-displaySlides(slideIndex);
 
 function currentSlide(number){
   displaySlides(slideIndex = number)
 }
-function switchSlides(slideNum){
-   displaySlides(slideIndex += slideNum);
-}
+
 
 
 // module.exports = {currentSlide,switchSlides};
